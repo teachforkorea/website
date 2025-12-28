@@ -103,7 +103,7 @@ export default function Home() {
             href="https://docs.google.com/forms/d/1Tk4Nrw-TKUO0USOiNUrxvdUCmCq7JD1DG7RmL_T9Jvc/viewform"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-slate-900 px-4 py-2 text-[11px] font-semibold text-white shadow-sm transition hover:bg-black md:px-6 md:text-sm"
+            className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2 text-[11px] font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50 md:px-6 md:text-sm"
           >
             지원하기
           </a>
@@ -118,7 +118,7 @@ export default function Home() {
           </p>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-6xl">
             모든 아이에게{" "}
-            <span className="bg-linear-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="text-slate-900 underline decoration-[#FFEE8C] decoration-4 underline-offset-4">
               좋은 교육
             </span>
             을.
@@ -136,7 +136,7 @@ export default function Home() {
               href="https://docs.google.com/forms/d/1Tk4Nrw-TKUO0USOiNUrxvdUCmCq7JD1DG7RmL_T9Jvc/viewform"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-xs font-semibold text-white shadow-sm transition hover:bg-black md:px-8 md:text-sm"
+              className="inline-flex items-center justify-center rounded-full bg-[#FFEE8C] px-6 py-3 text-xs font-semibold text-slate-800 shadow-sm transition hover:brightness-95 md:px-8 md:text-sm"
             >
               교육 봉사 지원하기
             </a>
@@ -185,14 +185,13 @@ export default function Home() {
             {shuffledStories.slice(0, visibleCount).map((story, index) => (
               <div
                 key={index}
-                className="relative flex flex-col overflow-hidden rounded-[32px] bg-slate-950 px-6 py-8 text-slate-100 shadow-sm md:px-8 md:py-10"
+                className="flex flex-col rounded-[32px] bg-slate-100 px-6 py-8 shadow-sm md:px-8 md:py-10"
               >
-                <div className="absolute inset-0 bg-linear-to-br from-slate-700/10 via-transparent to-slate-600/20" />
-                <div className="relative flex flex-col">
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-300">
+                <div className="flex flex-col">
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-600">
                     Volunteer Story
                   </p>
-                  <h2 className="mt-2 text-xl font-semibold tracking-tight text-white md:text-2xl">
+                  <h2 className="mt-2 text-xl font-semibold tracking-tight text-slate-900 md:text-2xl">
                     {story.title.split("\n").map((line, i) => (
                       <span key={i}>
                         {line}
@@ -202,10 +201,10 @@ export default function Home() {
                       </span>
                     ))}
                   </h2>
-                  <p className="mt-4 text-sm leading-relaxed text-slate-100/90 md:text-base">
+                  <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
                     {story.content}
                   </p>
-                  <p className="mt-5 text-xs font-medium text-slate-300">
+                  <p className="mt-5 text-xs font-medium text-slate-600">
                     {story.author}
                   </p>
                 </div>
@@ -370,7 +369,7 @@ export default function Home() {
                 href="https://docs.google.com/forms/d/1Tk4Nrw-TKUO0USOiNUrxvdUCmCq7JD1DG7RmL_T9Jvc/viewform"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center rounded-full bg-slate-900 px-8 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-black"
+                className="inline-flex items-center justify-center rounded-full bg-[#FFEE8C] px-8 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:brightness-95"
               >
                 교육 봉사 지원하기
               </a>
@@ -464,7 +463,7 @@ export default function Home() {
                   href="https://discord.gg/kvTR3FTT"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
+                  className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
                 >
                   디스코드로 문의하기
                 </a>
