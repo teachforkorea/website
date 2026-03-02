@@ -86,21 +86,21 @@ export default function Home() {
             <a href="#about" className="hover:text-slate-900">
               소개
             </a>
+            <a href="#report2025" className="hover:text-slate-900">
+              사업현황
+            </a>
             <a href="#programs" className="hover:text-slate-900">
               프로그램
             </a>
             <a href="#volunteer" className="hover:text-slate-900">
               봉사 참여
             </a>
-            <a href="#impact" className="hover:text-slate-900">
-              임팩트
-            </a>
             <a href="#contact" className="hover:text-slate-900">
               문의
             </a>
           </nav>
           <a
-            href="https://docs.google.com/forms/d/1Tk4Nrw-TKUO0USOiNUrxvdUCmCq7JD1DG7RmL_T9Jvc/viewform"
+            href="https://forms.gle/LtSDLmhQLqr7XZJY6"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2 text-[11px] font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50 md:px-6 md:text-sm"
@@ -133,21 +133,14 @@ export default function Home() {
           </p>
           <div className="mt-7 flex flex-col gap-3 text-sm sm:flex-row">
             <a
-              href="https://docs.google.com/forms/d/1Tk4Nrw-TKUO0USOiNUrxvdUCmCq7JD1DG7RmL_T9Jvc/viewform"
+              href="https://forms.gle/LtSDLmhQLqr7XZJY6"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-[#FFEE8C] px-6 py-3 text-xs font-semibold text-slate-800 shadow-sm transition hover:brightness-95 md:px-8 md:text-sm"
             >
               교육 봉사 지원하기
             </a>
-            <a
-              href="https://discord.gg/kvTR3FTT"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-xs font-semibold text-slate-900 transition hover:border-slate-400 md:px-8 md:text-sm"
-            >
-              디스코드로 문의하기
-            </a>
+
           </div>
           <dl className="mt-10 grid w-full gap-6 text-sm text-slate-600 md:max-w-3xl md:grid-cols-3">
             <div className="border-t border-slate-200 pt-4">
@@ -232,7 +225,7 @@ export default function Home() {
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
               Teach for Korea는{" "}
               <span className="font-semibold text-slate-900">
-                “아이의 출신과 환경이 삶의 가능성을 결정하지 않도록”
+                "아이의 출신과 환경이 삶의 가능성을 결정하지 않도록"
               </span>{" "}
               하기 위해 설립된 비영리 교육 봉사 단체입니다. 지역 아동센터, 대안학교 등과
               협력해 학습 지원과 멘토링, 진로 탐색 활동을 제공합니다.
@@ -263,6 +256,107 @@ export default function Home() {
           </div>
         </section>
 
+        {/* 2025 사업 현황 */}
+        <section id="report2025" className="mt-20 scroll-mt-24 md:mt-24">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">2025년 사업 현황</p>
+          <h2 className="mt-2 text-xl font-bold tracking-tight text-slate-900 md:text-2xl">
+            한 해동안, 이렇게 함께했습니다
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-slate-700 md:text-base">
+            각 지역의 교실에서 아이들과 교사들이 함께 배우고, 먹고, 성장했습니다.
+          </p>
+
+          {/* 프로그램 카드 3개 */}
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            <div className="rounded-2xl bg-white px-6 py-7 shadow-sm ring-1 ring-slate-200">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">교과 수업</p>
+              <h3 className="mt-2 text-base font-semibold text-slate-900">국·영·수 개별 맞춤 수업</h3>
+              <p className="mt-3 text-xs leading-relaxed text-slate-600 md:text-sm">
+                평일 오후 6시–10시, 소수 학생과 대학생 교사를 1:1로 연결해 학생 수준에 맞는 수업을 진행했습니다. 내신 기출 자료와 인터넷 강의 수강권도 무상으로 제공하며, 분기별 성적 우수자에게는 장학금을 지급합니다.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-white px-6 py-7 shadow-sm ring-1 ring-slate-200">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">진로 멘토링</p>
+              <h3 className="mt-2 text-base font-semibold text-slate-900">대학 탐방 · 기업 현장 체험</h3>
+              <p className="mt-3 text-xs leading-relaxed text-slate-600 md:text-sm">
+                서울권 대학 탐방, 은행 직업 체험, 기업 인턴 기회 등 다양한 진로 활동을 함께했습니다. 수시·정시 원서접수비를 지원하고, 자기소개서 첨삭·논술수업·적성고사 풀이 등 입시 전 과정을 직접 도왔습니다.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-white px-6 py-7 shadow-sm ring-1 ring-slate-200">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">인성 · 문화 활동</p>
+              <h3 className="mt-2 text-base font-semibold text-slate-900">교실 안팎에서 함께 어우러졌습니다</h3>
+              <p className="mt-3 text-xs leading-relaxed text-slate-600 md:text-sm">
+                수업 전 저녁 식사로 교사와 학생이 식구가 되고, 독서골든벨·체육대회·현장 체험학습·크리스마스 행사를 통해 진짜 공동체를 만들었습니다.
+              </p>
+            </div>
+          </div>
+
+          {/* 학생 목소리 */}
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            {[
+              "선생님 덕분에 의자에 앉아 공부하는 시간이 길어졌어요.",
+              "학교 수업에서 늘 소외 받던 제가, 처음으로 수업시간이 재밌다고 느꼈어요.",
+              "제가 선생님으로부터 받은 것보다 더 많이 남들에게 베풀고 싶어요.",
+            ].map((quote) => (
+              <blockquote
+                key={quote}
+                className="rounded-2xl bg-[#FFEE8C]/25 px-6 py-5 ring-1 ring-[#FFEE8C]/60"
+              >
+                <p className="text-sm leading-relaxed text-slate-800">"{quote}"</p>
+                <footer className="mt-3 text-[11px] text-slate-500">— 참여 학생</footer>
+              </blockquote>
+            ))}
+          </div>
+
+          {/* 재정 투명성 + 수상/인정 */}
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            <div className="rounded-2xl bg-white px-6 py-7 shadow-sm ring-1 ring-slate-200">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">투명한 재정 운영</p>
+              <h3 className="mt-2 text-base font-semibold text-slate-900">기부금, 아이들에게 직접 씁니다</h3>
+              <div className="mt-4 flex items-center gap-6">
+                <div>
+                  <p className="text-2xl font-semibold text-slate-900">87.4%</p>
+                  <p className="mt-1 text-xs text-slate-500">직접 사업비</p>
+                </div>
+                <div className="h-8 w-px bg-slate-200" />
+                <div>
+                  <p className="text-2xl font-semibold text-slate-900">12.6%</p>
+                  <p className="mt-1 text-xs text-slate-500">운영비</p>
+                </div>
+              </div>
+              <p className="mt-4 text-xs leading-relaxed text-slate-600 md:text-sm">
+                행정 직원 없이 전원 무급 자원봉사로 운영하여 관리비를 최소화하고, 기부금의 대부분을 학생 교육에 직접 투입합니다.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-white px-6 py-7 shadow-sm ring-1 ring-slate-200">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">수상 · 인정</p>
+              <h3 className="mt-2 text-base font-semibold text-slate-900">지역 사회가 먼저 알아봤습니다</h3>
+              <ul className="mt-4 space-y-3">
+                <li className="flex gap-3 text-xs text-slate-600 md:text-sm">
+                  <span className="mt-0.5 shrink-0 text-slate-300">—</span>
+                  <span>매년 활동 지역 구청으로부터 대학생 교사 <strong className="text-slate-900">봉사상</strong> 수여</span>
+                </li>
+                <li className="flex gap-3 text-xs text-slate-600 md:text-sm">
+                  <span className="mt-0.5 shrink-0 text-slate-300">—</span>
+                  <span><strong className="text-slate-900">서울시 봉사상</strong> 수차례 수상</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* AI 교육 예고 배너 */}
+          <div className="mt-6 rounded-2xl bg-slate-900 px-6 py-6 md:px-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">앞으로의 계획</p>
+            <p className="mt-2 text-base font-semibold text-white md:text-lg">
+              AI 시대, 아이들이 뒤처지지 않도록
+            </p>
+            <p className="mt-2 text-xs leading-relaxed text-slate-300 md:text-sm">
+              2026년부터 IT 전문가 네트워크와 함께 월별 AI 교육 세션을 진행할 계획입니다.
+              변화하는 시대에 우리 아이들도 함께 앞으로 나아갑니다.
+            </p>
+          </div>
+        </section>
+
         {/* Programs */}
         <section id="programs" className="mt-24 scroll-mt-24 md:mt-28">
           <div className="mx-auto max-w-3xl text-center">
@@ -272,7 +366,7 @@ export default function Home() {
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
               Teach for Korea의 모든 프로그램은{" "}
               <span className="font-semibold text-slate-900">
-                “지금 이 아이들에게 정말 필요한 것”
+                "지금 이 아이들에게 정말 필요한 것"
               </span>
               에서 출발합니다. 학습 보충, 멘토링, 진로 탐색까지 실제 수요를 바탕으로
               설계합니다.
@@ -366,7 +460,7 @@ export default function Home() {
             </div>
             <div className="mt-6">
               <a
-                href="https://docs.google.com/forms/d/1Tk4Nrw-TKUO0USOiNUrxvdUCmCq7JD1DG7RmL_T9Jvc/viewform"
+                href="https://forms.gle/LtSDLmhQLqr7XZJY6"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-[#FFEE8C] px-8 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:brightness-95"
@@ -417,7 +511,7 @@ export default function Home() {
               </p>
               <p className="mt-2 text-2xl font-semibold text-slate-900">94%</p>
               <p className="mt-1 text-[11px] text-slate-500">
-                “다음에도 참여하고 싶다”
+                "다음에도 참여하고 싶다"
               </p>
             </div>
           </div>
@@ -433,7 +527,7 @@ export default function Home() {
               <p className="mt-3 text-sm leading-relaxed text-slate-700 md:text-base">
                 교육 봉사 참여, 파트너십, 후원, 강연·워크숍 요청 등{" "}
                 <span className="font-semibold text-slate-900">
-                  “함께 교육의 가능성을 넓히는 일”
+                  "함께 교육의 가능성을 넓히는 일"
                 </span>
                 이라면 어떤 이야기든 환영합니다.
               </p>
@@ -458,20 +552,23 @@ export default function Home() {
                   </dd>
                 </div>
               </dl>
-              <div className="mt-5">
-                <a
-                  href="https://discord.gg/kvTR3FTT"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
-                >
-                  디스코드로 문의하기
-                </a>
-              </div>
+
             </div>
           </div>
         </section>
       </main>
+
+      {/* Partner Band */}
+      <div className="border-t border-slate-100 bg-slate-50 py-10">
+        <div className="mx-auto max-w-6xl px-5 md:px-8 flex flex-col items-center gap-5">
+          <p className="text-sm text-slate-500 font-light tracking-wide">하나금융나눔재단과 함께합니다</p>
+          <img
+            src="/hana-logo.png"
+            alt="하나금융나눔재단"
+            className="h-9"
+          />
+        </div>
+      </div>
 
       <footer className="border-t border-slate-200 bg-white/80 py-4 text-center text-[11px] text-slate-500">
         <p>© {new Date().getFullYear()} Teach for Korea. All rights reserved.</p>
