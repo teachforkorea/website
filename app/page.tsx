@@ -112,64 +112,75 @@ export default function Home() {
 
       <main className="mx-auto max-w-6xl px-5 pb-24 pt-12 md:px-8 md:pt-20">
         {/* Hero - Apple 스타일의 넓은 여백과 큰 타이포 */}
-        <section className="flex flex-col items-center text-center md:items-start md:text-left">
-          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500 md:tracking-[0.25em]">
-            Teach for Korea
-          </p>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-6xl">
-            모든 아이에게{" "}
-            <span className="text-slate-900 underline decoration-[#FFEE8C] decoration-4 underline-offset-4">
-              좋은 교육
-            </span>
-            을.
-          </h1>
-          <p className="mt-4 max-w-2xl text-base text-slate-700 md:text-xl">
-            교육 격차가 큰 지역의 아이들에게
-            <br />
-            <span className="font-semibold text-slate-900">
-              믿을 만한 어른과 배움의 경험
-            </span>
-            을 연결하는 비영리 교육 봉사 네트워크.
-          </p>
-          <div className="mt-7 flex flex-col gap-3 text-sm sm:flex-row">
-            <a
-              href="https://forms.gle/LtSDLmhQLqr7XZJY6"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-[#FFEE8C] px-6 py-3 text-xs font-semibold text-slate-800 shadow-sm transition hover:brightness-95 md:px-8 md:text-sm"
-            >
-              교육 봉사 지원하기
-            </a>
-
+        <section className="flex flex-col gap-10 md:flex-row md:items-center md:gap-16">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left md:flex-1">
+            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500 md:tracking-[0.25em]">
+              Teach for Korea
+            </p>
+            <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-6xl">
+              모든 아이에게{" "}
+              <span className="text-slate-900 underline decoration-[#FFEE8C] decoration-4 underline-offset-4">
+                좋은 교육
+              </span>
+              을.
+            </h1>
+            <p className="mt-4 max-w-2xl text-base text-slate-700 md:text-xl">
+              교육 격차가 큰 지역의 아이들에게
+              <br />
+              <span className="font-semibold text-slate-900">
+                믿을 만한 어른과 배움의 경험
+              </span>
+              을 연결하는 비영리 교육 봉사 네트워크.
+            </p>
+            <div className="mt-7 flex flex-col gap-3 text-sm sm:flex-row">
+              <a
+                href="https://forms.gle/LtSDLmhQLqr7XZJY6"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-[#FFEE8C] px-6 py-3 text-xs font-semibold text-slate-800 shadow-sm transition hover:brightness-95 md:px-8 md:text-sm"
+              >
+                교육 봉사 지원하기
+              </a>
+            </div>
+            <dl className="mt-10 grid w-full gap-6 text-sm text-slate-600 md:grid-cols-3">
+              <div className="border-t border-slate-200 pt-4">
+                <dt className="text-xs font-medium uppercase tracking-[0.16em] text-slate-500">
+                  함께한 학생
+                </dt>
+                <dd className="mt-2 text-2xl font-semibold text-slate-900">
+                  300+
+                </dd>
+              </div>
+              <div className="border-t border-slate-200 pt-4">
+                <dt className="text-xs font-medium uppercase tracking-[0.16em] text-slate-500">
+                  참여 봉사자
+                </dt>
+                <dd className="mt-2 text-2xl font-semibold text-slate-900">
+                  연 80명 내외
+                </dd>
+              </div>
+              <div className="border-t border-slate-200 pt-4">
+                <dt className="text-xs font-medium uppercase tracking-[0.16em] text-slate-500">
+                  주요 지역
+                </dt>
+                <dd className="mt-2 text-lg font-semibold text-slate-900 md:text-xl">
+                  서대문, 성북, 관악
+                  <br className="md:hidden" />
+                  공부방
+                </dd>
+              </div>
+            </dl>
           </div>
-          <dl className="mt-10 grid w-full gap-6 text-sm text-slate-600 md:max-w-3xl md:grid-cols-3">
-            <div className="border-t border-slate-200 pt-4">
-              <dt className="text-xs font-medium uppercase tracking-[0.16em] text-slate-500">
-                함께한 학생
-              </dt>
-              <dd className="mt-2 text-2xl font-semibold text-slate-900">
-                300+
-              </dd>
-            </div>
-            <div className="border-t border-slate-200 pt-4">
-              <dt className="text-xs font-medium uppercase tracking-[0.16em] text-slate-500">
-                참여 봉사자
-              </dt>
-              <dd className="mt-2 text-2xl font-semibold text-slate-900">
-                연 80명 내외
-              </dd>
-            </div>
-            <div className="border-t border-slate-200 pt-4">
-              <dt className="text-xs font-medium uppercase tracking-[0.16em] text-slate-500">
-                주요 지역
-              </dt>
-              <dd className="mt-2 text-lg font-semibold text-slate-900 md:text-xl">
-                서대문, 성북, 관악
-                <br className="md:hidden" />
-                공부방
-              </dd>
-            </div>
-          </dl>
+          <div className="w-full overflow-hidden rounded-2xl shadow-md md:w-[45%] md:flex-shrink-0">
+            <Image
+              src="/hero.jpg"
+              alt="Teach for Korea 봉사자들"
+              width={600}
+              height={450}
+              className="w-full object-cover transition duration-500 hover:scale-105"
+              priority
+            />
+          </div>
         </section>
 
         {/* Volunteer Stories */}
